@@ -5,11 +5,17 @@ return {
     keys = {
       {
         "<leader>dgt",
-        
-          function()
-            require('dap-go').debug_test()
-          end,
-          desc = "Debug go test"
+        function()
+          require('dap-go').debug_test()
+        end,
+        desc = "Debug go test"
+      },
+      {
+        "<leader>dgl",
+        function()
+          require('dap-go').debug_last()
+        end,
+        desc = "Debug go test last"
       }
     },
     ft = "go",

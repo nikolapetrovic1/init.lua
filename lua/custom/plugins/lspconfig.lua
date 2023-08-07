@@ -1,5 +1,5 @@
--- local on_attach = require("plugins.lspconfig").on_attach
--- local capabilities = require("plugins.lspconfig").capabilities
+-- local on_attach = require("lspconfig").on_attach
+-- local capabilities = require("lspconfig").capabilities
 --
 -- local lspconfig = require("lspconfig")
 -- local util = require "lspconfig/util"
@@ -20,6 +20,24 @@
 -- 		},
 -- 	},
 -- }
+-- --
+
+-- require'lspconfig'.pyright.setup{}
+--
+-- local lspconfig = require 'lspconfig'
+--
+-- lspconfig.pyright.setup {
+-- 	settings = {
+-- 		pyright = { autoImportCompletion = true, },
+-- 		python = {
+-- 			analysis = {
+-- 				autoSearchPaths = true,
+-- 				diagnosticMode = 'openFilesOnly',
+-- 				useLibraryCodeForTypes = true,
+-- 				typeCheckingMode = 'off'
+-- 			}
+-- 		}
+-- 	} }
 --
 return {
 	"neovim/nvim-lspconfig",

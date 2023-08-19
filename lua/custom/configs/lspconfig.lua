@@ -59,3 +59,7 @@ lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+lspconfig.elixirls.setup {
+  cmd = { "C:/Users/nikola/AppData/Local/nvim-data/mason/packages/elixir-ls/language_server.bat" },
+}

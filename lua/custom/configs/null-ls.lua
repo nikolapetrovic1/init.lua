@@ -3,6 +3,8 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local opts = {
   sources = {
+    null_ls.builtins.formatting.mix,
+    null_ls.builtins.diagnostics.credo,
     null_ls.builtins.formatting.deno_fmt,
     null_ls.builtins.formatting.djhtml,
     null_ls.builtins.formatting.black,

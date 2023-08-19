@@ -45,7 +45,7 @@ local plugins = {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = { "lua", "typescript", "html", "htmldjango", "python", "go", "jinja.html" },
+    ft = { "elixir", "lua", "typescript", "html", "htmldjango", "python", "go", "jinja.html" },
     opts = function()
       return require "custom.configs.null-ls"
     end,

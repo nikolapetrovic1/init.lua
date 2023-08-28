@@ -64,6 +64,10 @@ local plugins = {
     "lepture/vim-jinja",
     ft = { "jinja" },
   },
+  {
+    "rebelot/kanagawa.nvim",
+  },
+
 }
 
 return plugins

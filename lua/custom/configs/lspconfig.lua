@@ -61,5 +61,12 @@ lspconfig.html.setup {
 }
 
 lspconfig.elixirls.setup {
-  cmd = { "C:/Users/nikola/AppData/Local/nvim-data/mason/packages/elixir-ls/language_server.bat" },
+  -- cmd = { "C:/Users/snino/AppData/Local/nvim-data/mason/packages/elixir-ls/language_server.bat" },
+  cmd = {"C:/Users/snino/elixir-ls/language_server.bat"},
+  root_dir = util.root_pattern("mix.exs", ".git") or vim.loop.os_homedir(),
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
+lspconfig.intelephense.setup{}
+
+lspconfig.hls.setup{}
